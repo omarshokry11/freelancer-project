@@ -1,0 +1,50 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.bg-light 
+{
+    height: 65px;
+}
+
+.navbar-light .navbar-brand 
+{
+    margin-left: 170px;
+}
+
+.login a
+{
+    margin-right: 20px;
+    color: #000;
+}
+
+.btn
+{
+    margin-right: 326px;
+}
+
+.login a:hover
+{
+    color: rgba(0, 60, 255, 0.815);
+}
+
+
+@media screen and (max-width:400px) {
+
+    .navbar-light .navbar-brand 
+    {
+        margin-left: 0;
+        position: fixed;
+    }
+
+    .login
+    {
+        margin-right: 0;
+        margin-left: 150px;
+    }
+
+}
