@@ -36,8 +36,18 @@ body
     color: rgba(0, 60, 255, 0.815);
 }
 
-
 @media screen and (max-width:400px) {
+
+    .navbar-light .navbar-brand
+    {
+        font-size: 2rem;
+    }
+
+    .navbar
+    {
+        width: 700px;
+        height: 70px;
+    }
 
     .navbar-light .navbar-brand 
     {
@@ -48,7 +58,11 @@ body
     .login
     {
         margin-right: 0;
-        margin-left: 150px;
+        margin-left: 450px;
+    }
+
+    .login a{
+        font-size: 1.65rem;
     }
 
 }
