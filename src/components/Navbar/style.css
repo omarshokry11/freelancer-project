@@ -1,12 +1,16 @@
-body
+*
 {
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
     list-style: none;
 }
 
-.bg-light 
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar
 {
     height: 65px;
 }

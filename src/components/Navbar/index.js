@@ -5,7 +5,7 @@ import './style.css';
 
 const Navbars = () => {
     return (
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" className="navbar">
       <Navbar.Brand href="#home">Freelancer</Navbar.Brand>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

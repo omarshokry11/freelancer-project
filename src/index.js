@@ -6,17 +6,17 @@ import ReactDOM from 'react-dom';
 import "normalize.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css";
-import App from './App.js';
+import Portal from './Portal.js';
 
-const Apps = () => {
+const App = () => {
     return (
         <div>
-            <App />
+            <Portal />
         </div>
     );
 };
 
 ReactDOM.render(
-  <Apps />,    
+  <App />,    
   document.querySelector('#root')
 );

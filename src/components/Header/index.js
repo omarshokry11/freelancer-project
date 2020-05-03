@@ -6,8 +6,8 @@ import './style.css';
 class Header extends React.Component{
   render (){
         return (
-          <div className="slider">
-              <Carousel.Caption style={{margin: '0 47% 20%  0'}}>
+          <div className="slider d-none d-md-block">
+              <Carousel.Caption>
                   <h1 className="h4">Hire expert freelancers for any job, online</h1>
                   <p className="lead">Millions of small businesses use Freelancer to turn their ideas into reality.</p>
                   <button className="button1">I Want Hire</button>
@@ -17,7 +17,7 @@ class Header extends React.Component{
 
               <Carousel.Item>
               <img
-                  className="d-block  w-100"
+                  className="d-block carousel-img"
                   src="imge/Home/2.jpg"
                   alt="Third slide"
                 />
@@ -25,7 +25,7 @@ class Header extends React.Component{
 
               <Carousel.Item>
                 <img
-                  className="d-block  w-100"
+                  className="d-block carousel-img"
                   src="imge/Home/home-bg.jpg"
                   alt="Second slide"
                 />
@@ -33,7 +33,7 @@ class Header extends React.Component{
 
               <Carousel.Item>
                 <img
-                  className="d-block  w-100"
+                  className="d-block carousel-img"
                   src="imge/Home/1.png"
                   alt="Third slide"
                 />
