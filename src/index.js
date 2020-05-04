@@ -1,22 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//global css
+import Portal from './Portal.js';
+
 // global css
 import "normalize.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css";
-import Portal from './Portal.js';
+import "./components/style/style.css";
 
-const App = () => {
-    return (
-        <div>
-            <Portal />
-        </div>
-    );
-};
 
 ReactDOM.render(
-  <App />,    
+  <Portal />,
   document.querySelector('#root')
 );

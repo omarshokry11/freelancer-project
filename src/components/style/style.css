@@ -1,0 +1,176 @@
+*
+{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body
+{
+    font-family: "Regular", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*Navbar*/
+
+
+#main-nav {
+    padding: 0 40px;
+}
+
+#main-nav .login a
+{
+    margin-right: 20px;
+    color: #000;
+    transition: 0.3s;
+}
+
+
+#main-nav .login a:hover
+{
+    color: rgba(0, 60, 255, 0.815);
+}
+
+#main-nav .btn-warning {
+    font-weight: 600;
+    background: #f77d0e;
+    color: #ffffff;
+    border-color: #f77d0e;
+    border-radius: 0;
+}
+
+#main-nav .btn-warning:hover {
+    background: #f88318;
+}
+
+#main-nav .text-to-post {
+    font-size: 0.815em;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#main-nav .text-to-post span {
+    display: block;
+}
+
+#main-nav .text-to-post span:last-of-type {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+@media screen and (max-width:768px) {
+
+    #main-nav {
+        position: relative;
+        padding: 0;
+    }
+
+    #main-nav .text-to-post {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        left: 0;
+        margin-left: 0;
+        padding: 10px 0;
+        font-size: 1em;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        background: #2b3340;
+        color: #ffffff;
+    }
+
+    #main-nav .text-to-post span:last-of-type {
+        font-weight: normal;
+    }
+
+}
+
+/*Carousel*/
+
+
+.main-carousel
+{
+    position: relative;
+}
+
+.main-carousel-caption {
+    position: absolute;
+    top: 10em;
+    left: 5em;
+    width: 580px;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.main-carousel-caption h1
+{
+    font-size: 2.5625rem;
+    font-weight: bold;
+}
+
+.main-carousel-caption .lead
+{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.main-carousel-caption button {
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+}
+
+.main-carousel-caption button:first-of-type {
+    background-color: #f77d0e;
+    border-color: #f77d0e;
+}
+
+
+.main-carousel-caption button:first-of-type:hover {
+    background-color: #f88318;
+    border-color: #f88318;
+}
+
+.main-carousel-caption button:last-of-type {
+    margin-left: 15px;
+    background: transparent;
+}
+
+.main-carousel-caption button:last-of-type:hover {
+    background: rgba(57, 108, 203, 0.75);
+}
+
+.carousel-inner {
+    height: 600px;
+}
+
+.carousel-indicators
+{
+    right: 84%;
+    bottom: 5%;
+    margin: 0;
+}
+
+.carousel-control-prev, .carousel-control-next
+{
+    display: none;
+}
+
+.carousel-indicators .active, .carousel-indicators li
+{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    text-align: left;
+}
+
+/*MainHeaderView*/
+
+.main-header-view {
+
+}
