@@ -433,7 +433,7 @@ label
 .footer
 {
     background-color: #000;
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.87);
 }
 
 .footer .container
