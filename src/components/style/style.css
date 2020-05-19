@@ -12,6 +12,11 @@ body
     height: 3000px;
 }
 
+.container
+{
+    margin-bottom: 100px;
+}
+
 /*Navbar*/
 
 
@@ -163,73 +168,44 @@ h5
 
 /*Web Sit*/
 
-.site
+.container-fluid
 {
-    border-bottom: 1px solid #DDD;
     margin-bottom: 100px;
+    border-bottom: 1px solid rgba(170, 161, 161, 0.349);
 }
 
-.web
-{
-    display: flex;
-    flex-direction: row;
-    margin: 24px 30px 24px 170px;
-}
-
-h5
+.site h5
 {
     margin: 24px auto;
-    font-size: 1.25rem;
+    text-align: right;
+    padding: 10px;
 }
 
-.micro, .pwc
+.img, .imgs
 {
-    display: flex;
-    margin: 10px 0;
+    margin: 24px auto;
+    padding: 10px;
 }
 
-.micro img
+.img img, .imgs img
 {
-    margin: 0 35px 0 20px;
-}
-.pwc img
-{
-    margin: 0 35px 0 20px;
-}
-
-.web .divider
-{
-    height: 2px;
-    background-color: #000;
-    border: none;
-    width: auto;
-    margin: auto;
+    margin: 0 20px;
+    max-width: 100;
 }
 
 @media screen and (max-width:768px) {
 
-    .web
+    .site h5
     {
-        display: flex;
-        flex-direction: column;
-        margin: 24px auto;
+        text-align: center;
     }
 
-    .micro img
+    .imgs img
     {
-        margin: 0 60px 0 30px;
-    }
-
-    .pwc img
-    {
-        margin: 0 75px 0 30px;
-    }
-
-    h5
-    {
-        margin: 24px auto;
+        margin: 0 25px;
     }
 }
+
 
 /*Work*/
 
@@ -251,4 +227,262 @@ h5
 {
     font-size: 1.17rem;
     display: inline;
+}
+
+/*About*/
+
+.about h2
+{
+    margin-bottom: 50px;
+    font-size: 2rem;
+    line-height: 1.37;
+    font-weight: bold;
+}
+
+.about img
+{
+    margin-bottom: 20px;
+}
+
+.about h3
+{
+    display: inline-block;
+    margin: 12px;
+    width: 100%;
+}
+
+.about p
+{
+    font-size: 1.20rem;
+    line-height: 1.4;
+}
+
+@media screen and (max-width:768px) {
+
+    .about p
+    {
+        font-size: 1.08rem;
+        line-height: 1.5;
+    }
+}
+
+
+/*Favorites*/
+
+.favorites
+{
+    background-color: #F7F7F7;
+}
+
+.favorites h1
+{
+    padding: 50px 0 0 0;
+}
+
+.favorites .devlop .lead img
+{
+    max-width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.favorites .devlop .lead div
+{
+    margin: 0 30px;
+    background-color: #FFF;
+    height: 260px;
+    width: 400px;
+}
+
+.favorites .devlop .lead
+{
+    margin: 20px 20px 40px 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.favorites .devlop .lead h3, .favorites .devlop .lead p
+{
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:768px) {
+
+    .favorites
+    {
+        height: 662px;
+    }
+
+    .favorites .devlop
+    {
+        max-width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+    }
+
+    .favorites .devlop .lead img
+    {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .favorites .devlop .lead div
+    {
+        background-color: #FFF;
+        height: 300px;
+        width: 300px;
+        margin-left: 0;
+    }
+
+    .favorites .devlop .lead h3, .favorites .devlop .lead p
+    {
+        font-size: 1.25rem;
+        line-height: 1.4;
+        margin-left: 20px;
+    }
+
+    .favorites h1
+    {
+        margin-bottom: 20px;
+    }
+
+    .favorites .her
+    {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+}
+
+/*Categories*/
+
+.cat a
+{
+    color: #000;
+}
+
+.cat a img
+{
+    margin-bottom: 10px;
+}
+
+.cat a p
+{
+    font-size: .88rem;
+    margin-bottom: 10px;
+}
+
+.cat a:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .cat
+    {
+        background-color: #DDD;
+        margin: 10px;
+        padding: 10px;
+        height: 85px;
+        max-width: 150px;
+    }
+}
+
+.api, .enter
+{
+    background-color: #EEE;
+    padding: 20px;
+}
+
+.freelancer
+{
+    text-align: right;
+}
+
+label
+{
+    margin-bottom: 20px;
+}
+
+.freelancer h6, .enter h6
+{
+    margin-bottom: 20px;
+}
+
+.btn
+{
+    background-color: rgba(0, 195, 255, 0.692);
+    border: rgba(0, 195, 255, 0.692);
+    margin-top: 20px;
+}
+
+.btn:hover
+{
+    background-color: rgba(0, 195, 255, 0.692);
+    border: rgba(0, 195, 255, 0.692);
+}
+
+/*Footer*/
+
+.footer
+{
+    background-color: #000;
+    color: #FFF;
+}
+
+.footer .container
+{
+    margin-bottom: 0;
+}
+
+.footer p i
+{
+    margin-right: 10px;
+}
+
+.footer h2
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer h5
+{
+    margin-top: 20px;
+    color: #FFF;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.footer ul li
+{
+    color: #EEE;
+}
+
+.footer ul li img
+{
+    border: 1px solid #FFF;
+    padding: 10px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer ul li a
+{
+    margin-right: 30px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .footer
+    {
+        max-width: 100%;
+    }
 }

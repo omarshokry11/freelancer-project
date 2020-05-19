@@ -8,14 +8,14 @@ const Website = () => {
             <h2>Need work done?</h2>
         </div>        
         <div className="col-md-4 col-12 work">
-            <img src="13.svg" />
+            <img src="post.svg" />
             <h3>Post a job</h3>
             <p>
                 It's easy. Simply post a job you need completed and receive competitive bids from freelancers within minutes.
             </p>
         </div>
         <div className="col-md-4 col-12 work">
-            <img src="14.svg" />
+            <img src="choose.svg" />
             <h3>Choose freelancers</h3>
             <p>
                 Whatever your needs, there will be a freelancer to get it done: from web design, mobile app development,
@@ -23,7 +23,7 @@ const Website = () => {
             </p>
         </div>
         <div className="col-md-4 col-12 work">
-            <img src="15.svg" />
+            <img src="pay.svg" />
             <h3>Pay safely</h3>
             <p>
                 With secure payments and thousands of reviewed professionals to choose from, Freelancer.
