@@ -4,7 +4,7 @@ const MainNav = () => {
     return (
     <div className="container">
       <div className="row">
-          <div className="col-12 text-center about">
+          <div className="col-12 text-center title">
               <h2>What's great about it?</h2>
           </div>
           <div className="col-md-4 col-12 about">

@@ -4,7 +4,7 @@ const Website = () => {
     return (
     <div className="container text-center">
         <div className="row">
-        <div className="col-12 h2">
+        <div className="col-12 title">
             <h2>Need work done?</h2>
         </div>        
         <div className="col-md-4 col-12 work">

@@ -2,7 +2,7 @@ import React from "react";
 
 import MainNav from './components/MainNav.js';
 import MainCarousel from './components/MainCarousel.js';
-import Website from './components/Website.js';
+import AsUsedBy from './components/AsUsedBy.js';
 import Work from './components/Work.js';
 import About from './components/About.js';
 import Favorites from './components/Favorites.js';
@@ -15,7 +15,7 @@ class Portal extends React.Component {
       <>
         <MainNav />
         <MainCarousel />
-        <Website />
+        <AsUsedBy />
         <Work />
         <About />
         <Favorites />
