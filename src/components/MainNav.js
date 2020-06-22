@@ -17,10 +17,6 @@ const MainNav = () => {
               <a href="#signup">Sign Up</a>
           </div>
           <Button className="d-md-block d-none btn" variant="warning">Post a Project</Button>
-          <div className="text-to-post">
-              <span>TEXT your project to</span>
-              <span>+1 (415) 702 3294</span>
-          </div>
       </Navbar>
     </div>
     )

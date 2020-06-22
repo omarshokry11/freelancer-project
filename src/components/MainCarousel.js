@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, CarouselItem } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 
 class MainCarousel extends React.Component{
   render (){
@@ -13,7 +13,7 @@ class MainCarousel extends React.Component{
               </div>
               <Carousel>
                 <Carousel.Item>
-                <img className="d-block w-100" src="/bg2.jpg" alt="First Image" />
+                  <img className="d-block w-100" src="/bg2.jpg" alt="First Image" />
                 </Carousel.Item>
 
                 <Carousel.Item>
