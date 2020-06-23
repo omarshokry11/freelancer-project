@@ -1,5 +1,10 @@
 $fontweight: bold;
 $color: #FFF;
+$blueColor: #007bff;
+$blackColor: #000;
+$orangeColor: #f77d0e;
+$Ecolor: #EEE;
+$Dcolor:#DDD;
 
 *
 {
@@ -28,23 +33,23 @@ body
     .login a
     {
         margin-right: 20px;
-        color: #000;
+        color: $blackColor;
         transition: 0.3s;
         &:hover
         {
-            color: rgba(0, 60, 255, 0.815);
+            color: $blueColor;
         }
     }
     .btn-warning 
     {
         font-weight: 600;
-        background: #f77d0e;
+        background: $orangeColor;
         color: $color;
-        border-color: #f77d0e;
+        border-color: $orangeColor;
         border-radius: 0;
         &:hover
         {
-            background: #f88318;
+            background: $orangeColor;
         }
     }
 }
@@ -95,11 +100,11 @@ body
     }
     button:first-of-type 
     {
-        background-color: #f77d0e;
-        border-color: #f77d0e;
+        background-color: $orangeColor;
+        border-color: $orangeColor;
         &:hover {
-            background-color: #f88318;
-            border-color: #f88318;
+            background-color: $orangeColor;
+            border-color: $orangeColor;
         }
     }
     button:last-of-type {
@@ -214,7 +219,7 @@ body
     h3
     {
         margin: 20px;
-        color: #0e1724;
+        color: $blackColor;
         font-weight: $fontweight;
         font-size: x-large;
     }
@@ -372,32 +377,31 @@ body
 }
 /*Categories*/
 
-.cat a
+.main-cat a
 {
-    color: #000;
+    color: $blackColor;
+    
+    &:hover
+    {
+        color: $blackColor;
+        text-decoration: none;
+    }
+    img
+    {
+        margin-bottom: 10px;
+    }
+    p
+    {
+        font-size: .88rem;
+        margin-bottom: 10px;
+    }
 }
 
-.cat a img
-{
-    margin-bottom: 10px;
-}
-
-.cat a p
-{
-    font-size: .88rem;
-    margin-bottom: 10px;
-}
-
-.cat a:hover
-{
-    color: #000;
-    text-decoration: none;
-}
 
 @media screen and (max-width:768px) {
-    .cat
+    .main-cat
     {
-        background-color: #DDD;
+        background-color: $Dcolor;
         margin: 10px;
         padding: 10px;
         height: 85px;
@@ -405,90 +409,126 @@ body
     }
 }
 
-.api, .enter
+.api, .main-api
 {
-    background-color: #EEE;
-    padding: 20px;
-}
+    background-color: $Ecolor;
+    padding: 18px;
+    margin: 0 10px;
 
-.freelancer
-{
-    text-align: right;
-}
+    .enter
+    {
+        background-color: $Ecolor;
 
-label
-{
-    margin-bottom: 20px;
-}
+        h6
+        {
+            margin-bottom: 20px;
+        }
 
-.freelancer h6, .enter h6
-{
-    margin-bottom: 20px;
-}
+        label
+        {
+            margin-bottom: 20px;
+        }
 
-.btn
-{
-    background-color: rgba(0, 195, 255, 0.692);
-    border: rgba(0, 195, 255, 0.692);
-    margin-top: 20px;
-}
+        .btn
+        {
+            background-color: $blueColor;
+            border: $blueColor;
+            margin-top: 20px;
 
-.btn:hover
-{
-    background-color: rgba(0, 195, 255, 0.692);
-    border: rgba(0, 195, 255, 0.692);
+            &:hover
+            {
+                background-color: $blueColor;
+                border: $blueColor;
+            }
+        }
+    }
+
+    .freelancer
+    {
+        text-align: right;
+
+        h6
+        {
+            margin-bottom: 20px;
+        }
+
+        label
+        {
+            margin-bottom: 20px;
+        }
+
+        .btn
+        {
+            background-color: $blueColor;
+            border: $blueColor;
+            margin-top: 20px;
+
+            &:hover
+            {
+                background-color: $blueColor;
+                border: $blueColor;
+            }
+        }
+    }
+
 }
 
 /*Footer*/
 
 .footer
 {
-    background-color: #000;
-    color: rgba(255, 255, 255, 0.87);
-}
-
-.footer .container
-{
-    margin-bottom: 0;
-}
-
-.footer p i
-{
-    margin-right: 10px;
-}
-
-.footer h2
-{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.footer h5
-{
-    margin-top: 20px;
+    background-color: $blackColor;
     color: $color;
-    text-align: left;
-    margin-left: 40px;
-}
 
-.footer ul li
-{
-    color: #EEE;
-}
+    .container
+    {
+        margin-bottom: 0;
+    }
 
-.footer ul li img
-{
-    border: 1px solid $color;
-    padding: 10px;
-    width: 150px;
-    margin-bottom: 20px;
-}
+    p
+    {
+        i
+        {
+            margin-right: 10px;
+        }
+    }
 
-.footer ul li a
-{
-    margin-right: 30px;
-    color: #FFF;
-    text-decoration: none;
+    h2
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h5
+    {
+        margin-top: 20px;
+        color: $color;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    ul
+    {
+        li
+        {
+            color: $Ecolor;
+
+            img
+            {
+                border: 1px solid $color;
+                padding: 10px;
+                width: 150px;
+                margin-bottom: 20px;
+            }
+
+            a
+            {
+                margin-right: 30px;
+                color: $color;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
