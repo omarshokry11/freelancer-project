@@ -19,7 +19,7 @@ body {
     color: #000;
     transition: 0.3s; }
     #main-nav .login a:hover {
-      color: rgba(0, 60, 255, 0.815); }
+      color: #007bff; }
   #main-nav .btn-warning {
     font-weight: 600;
     background: #f77d0e;
@@ -27,7 +27,7 @@ body {
     border-color: #f77d0e;
     border-radius: 0; }
     #main-nav .btn-warning:hover {
-      background: #f88318; }
+      background: #f77d0e; }
 
 @media screen and (max-width: 768px) {
   #main-nav {
@@ -62,8 +62,8 @@ body {
     background-color: #f77d0e;
     border-color: #f77d0e; }
     .main-carousel-caption button:first-of-type:hover {
-      background-color: #f88318;
-      border-color: #f88318; }
+      background-color: #f77d0e;
+      border-color: #f77d0e; }
   .main-carousel-caption button:last-of-type {
     margin-left: 15px;
     background: transparent; }
@@ -127,7 +127,7 @@ body {
 
 .work h3 {
   margin: 20px;
-  color: #0e1724;
+  color: #000;
   font-weight: bold;
   font-size: x-large; }
 .work p {
@@ -206,83 +206,82 @@ body {
         line-height: 1.4;
         margin-left: 20px; } }
 /*Categories*/
-.cat a {
+.main-cat a {
   color: #000; }
-
-.cat a img {
-  margin-bottom: 10px; }
-
-.cat a p {
-  font-size: .88rem;
-  margin-bottom: 10px; }
-
-.cat a:hover {
-  color: #000;
-  text-decoration: none; }
+  .main-cat a:hover {
+    color: #000;
+    text-decoration: none; }
+  .main-cat a img {
+    margin-bottom: 10px; }
+  .main-cat a p {
+    font-size: .88rem;
+    margin-bottom: 10px; }
 
 @media screen and (max-width: 768px) {
-  .cat {
+  .main-cat {
     background-color: #DDD;
     margin: 10px;
     padding: 10px;
     height: 85px;
     max-width: 150px; } }
-.api, .enter {
+.api, .main-api {
   background-color: #EEE;
-  padding: 20px; }
-
-.freelancer {
-  text-align: right; }
-
-label {
-  margin-bottom: 20px; }
-
-.freelancer h6, .enter h6 {
-  margin-bottom: 20px; }
-
-.btn {
-  background-color: rgba(0, 195, 255, 0.692);
-  border: rgba(0, 195, 255, 0.692);
-  margin-top: 20px; }
-
-.btn:hover {
-  background-color: rgba(0, 195, 255, 0.692);
-  border: rgba(0, 195, 255, 0.692); }
+  padding: 18px;
+  margin: 0 10px; }
+  .api .enter, .main-api .enter {
+    background-color: #EEE; }
+    .api .enter h6, .main-api .enter h6 {
+      margin-bottom: 20px; }
+    .api .enter label, .main-api .enter label {
+      margin-bottom: 20px; }
+    .api .enter .btn, .main-api .enter .btn {
+      background-color: #007bff;
+      border: #007bff;
+      margin-top: 20px; }
+      .api .enter .btn:hover, .main-api .enter .btn:hover {
+        background-color: #007bff;
+        border: #007bff; }
+  .api .freelancer, .main-api .freelancer {
+    text-align: right; }
+    .api .freelancer h6, .main-api .freelancer h6 {
+      margin-bottom: 20px; }
+    .api .freelancer label, .main-api .freelancer label {
+      margin-bottom: 20px; }
+    .api .freelancer .btn, .main-api .freelancer .btn {
+      background-color: #007bff;
+      border: #007bff;
+      margin-top: 20px; }
+      .api .freelancer .btn:hover, .main-api .freelancer .btn:hover {
+        background-color: #007bff;
+        border: #007bff; }
 
 /*Footer*/
 .footer {
   background-color: #000;
-  color: rgba(255, 255, 255, 0.87); }
-
-.footer .container {
-  margin-bottom: 0; }
-
-.footer p i {
-  margin-right: 10px; }
-
-.footer h2 {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.footer h5 {
-  margin-top: 20px;
-  color: #FFF;
-  text-align: left;
-  margin-left: 40px; }
-
-.footer ul li {
-  color: #EEE; }
-
-.footer ul li img {
-  border: 1px solid #FFF;
-  padding: 10px;
-  width: 150px;
-  margin-bottom: 20px; }
-
-.footer ul li a {
-  margin-right: 30px;
-  color: #FFF;
-  text-decoration: none; }
+  color: #FFF; }
+  .footer .container {
+    margin-bottom: 0; }
+  .footer p i {
+    margin-right: 10px; }
+  .footer h2 {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .footer h5 {
+    margin-top: 20px;
+    color: #FFF;
+    text-align: left;
+    margin-left: 40px; }
+  .footer ul li {
+    color: #EEE; }
+    .footer ul li img {
+      border: 1px solid #FFF;
+      padding: 10px;
+      width: 150px;
+      margin-bottom: 20px; }
+    .footer ul li a {
+      margin-right: 30px;
+      color: #FFF;
+      text-decoration: none; }
 
 @media screen and (max-width: 768px) {
   .footer {
