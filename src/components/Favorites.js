@@ -3,45 +3,47 @@ import React from 'react';
 const Favorites = () => {
     return (
     <div className="favorites">
-        <div className="container">
-            <div className="text-center">
-                <h1 className="title-fav">Crowd favorites</h1>
-                <h2 className="inner-title">Here are some of our most popular projects:</h2>
-            </div>
-            <div className="devlop">
-                <div className="inner-dev">
-                    <div>
-                        <img src="favorites/markting.png" />
-                        <h3>Website Development</h3>
-                        <p>From $300 USD</p>
-                    </div>
-                    <div>
-                        <img src="favorites/markting.png" />
-                        <h3>Website Development</h3>
-                        <p>From $300 USD</p>
-                    </div>
-                    <div>
-                        <img src="favorites/markting.png" />
-                        <h3>Website Development</h3>
-                        <p>From $300 USD</p>
-                    </div>
+        <div className="container text-center">
+            <div className="row">
+                <div className="col-12 tittle">
+                    <h2>Turn your dreams into reality with Freelancer</h2>
+                    <p>Here are some of our most popular projects:</p>
                 </div>
-                <div className="inner-dev">
-                    <div>
-                        <img src="favorites/markting.png" />
-                        <h3>Website Development</h3>
-                        <p>From $300 USD</p>
+                <div className="col-md-4 col-12">
+                    <div className="logo">
+                        <a href="#"> Post a contest like this </a>
                     </div>
-                    <div>
-                        <img src="favorites/markting.png" />
-                        <h3>Website Development</h3>
-                        <p>From $300 USD</p>
+                    <p>Website Development</p>
+                </div>
+                <div className="col-md-4 col-12">
+                    <div className="logo">
+                        <a href="#"> Post a contest like this </a>
                     </div>
-                    <div>
-                        <img src="favorites/markting.png" />
-                        <h3>Website Development</h3>
-                        <p>From $300 USD</p>
+                    <p>Packaging Design</p>
+                </div>
+                <div className="col-md-4 col-12">
+                    <div className="logo">
+                        <a href="#"> Post a contest like this </a>
                     </div>
+                    <p>Logo Design</p>
+                </div>
+                <div className="col-md-4 col-12">
+                    <div className="logo">
+                        <a> Post a contest like this </a>
+                    </div>
+                    <p>Graphic Design</p>
+                </div>
+                <div className="col-md-4 col-12">
+                    <div className="logo">
+                        <a href="#"> Post a contest like this </a>
+                    </div>
+                    <p>Mobile App</p>
+                </div>
+                <div className="col-md-4 col-12">
+                    <div className="logo">
+                        <a href="#"> Post a contest like this </a>
+                    </div>
+                    <p>Writing</p>
                 </div>
             </div>
         </div>

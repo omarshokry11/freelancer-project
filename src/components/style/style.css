@@ -5,11 +5,7 @@
 body {
   font-family: "Regular", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 3000px; }
-
-.container {
-  margin-bottom: 100px; }
+  -moz-osx-font-smoothing: grayscale; }
 
 /*Navbar*/
 #main-nav {
@@ -87,204 +83,193 @@ body {
   border-radius: 50%;
   text-align: left; }
 
-/*AsUsedBy*/
-.AsUsedBy {
-  margin-bottom: 100px;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid rgba(94, 94, 94, 0.5); }
-  .AsUsedBy .inner-AsUsedBy {
-    margin: 24px auto;
-    width: 20%;
-    text-align: right;
-    margin-right: 20px; }
-    .AsUsedBy .inner-AsUsedBy h5 {
-      margin: 24px auto; }
-  .AsUsedBy .company {
-    width: 40%;
-    margin: 24px auto; }
-    .AsUsedBy .company img {
-      margin: 15px 20px;
-      text-align: left; }
+/*As Used By*/
+.main-asusedby {
+  border-bottom: 1px solid #dedede;
+  padding: 32px 0;
+  margin-bottom: 100px; }
+  .main-asusedby .tittle h5 {
+    color: #4d525b;
+    margin-top: 10px; }
+  .main-asusedby .logo-company {
+    display: flex; }
+    .main-asusedby .logo-company div {
+      display: flex; }
+    .main-asusedby .logo-company img {
+      margin: 0 10px; }
 
 @media screen and (max-width: 768px) {
-  .AsUsedBy {
-    justify-content: space-around;
-    flex-direction: column; }
-    .AsUsedBy .inner-AsUsedBy {
-      text-align: center;
-      width: 100%; }
-    .AsUsedBy .company {
-      width: 100%;
-      margin: 0 35px; }
-      .AsUsedBy .company img {
-        margin: 20px 8px; } }
+  .main-asusedby .logo-company {
+    display: flex;
+    overflow: scroll;
+    margin: 0 25px; }
+    .main-asusedby .logo-company img {
+      width: 100px;
+      max-height: 50px;
+      margin: 0 25px; } }
 /*Work*/
-.title h2 {
-  margin-bottom: 50px;
-  font-weight: bold; }
+.main-work {
+  margin-bottom: 100px; }
+  .main-work .tittle h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.17;
+    margin-bottom: 20px; }
+  .main-work div img {
+    width: 50%; }
+  .main-work div div {
+    font-size: 17px;
+    font-weight: 400; }
 
-.work h3 {
-  margin: 20px;
-  color: #000;
-  font-weight: bold;
-  font-size: x-large; }
-.work p {
-  font-size: 1.17rem;
-  display: inline; }
-
-/*About*/
-.title h2 {
-  margin-bottom: 50px;
-  font-size: 2rem;
-  line-height: 1.37;
-  font-weight: bold; }
-
-.about img {
-  margin-bottom: 20px; }
-.about h3 {
-  display: inline-block;
-  margin: 12px;
-  width: 100%; }
-.about p {
-  font-size: 1.20rem;
-  line-height: 1.4; }
-
-@media screen and (max-width: 768px) {
-  .about p {
-    font-size: 1.08rem;
-    line-height: 1.5; } }
 /*Favorites*/
 .favorites {
-  background-color: #F7F7F7; }
-  .favorites .title-fav {
-    padding: 50px 0 0 0; }
-  .favorites .devlop .inner-dev {
-    margin: 20px 20px 40px 20px;
+  background-color: #f7f7f7;
+  padding: 100px 0 80px 0;
+  margin-bottom: 100px; }
+  .favorites .tittle h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.17;
+    color: #0e1724;
+    width: 700px;
+    margin: 0 18% 20px 18%; }
+  .favorites .tittle p {
+    font-weight: 400;
+    font-size: 24px;
+    font-weight: 1.33;
+    color: #0e1724;
+    font-style: normal;
+    margin-bottom: 50px; }
+  .favorites div .logo {
+    background-image: url("./assets/writting.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
     height: 300px;
-    display: flex;
-    flex-direction: row; }
-    .favorites .devlop .inner-dev img {
-      max-width: 100%;
-      margin: 0 0 20px 0; }
-    .favorites .devlop .inner-dev div {
-      margin: 0 30px;
-      background-color: #FFF;
-      height: 260px;
-      width: 400px; }
-    .favorites .devlop .inner-dev h3, .favorites .devlop .inner-dev p {
-      font-size: 1.25rem;
-      line-height: 1.4;
-      margin-left: 20px; }
+    margin-bottom: 20px; }
+    .favorites div .logo:hover {
+      background-color: rgba(255, 255, 255, 0.233); }
+    .favorites div .logo:hover a {
+      opacity: 1;
+      border: 2px solid #F7F7F7;
+      height: 40px;
+      text-align: center;
+      padding: 10px;
+      color: #FFF;
+      text-decoration: none;
+      text-align: center;
+      position: relative;
+      top: 50%; }
+    .favorites div .logo a {
+      opacity: 0; }
+  .favorites div p {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4; }
 
 @media screen and (max-width: 768px) {
   .favorites {
-    height: 662px; }
-    .favorites h1 {
-      margin-bottom: 20px; }
-    .favorites .her {
-      font-size: 1.8rem;
-      margin-bottom: 20px; }
-    .favorites .devlop {
-      max-width: 100%;
-      height: 500px;
-      display: flex;
-      flex-direction: row;
-      overflow: scroll; }
-      .favorites .devlop .inner-dev img {
-        max-width: 100%;
-        max-height: 100%;
-        margin: 0 0 20px 0; }
-      .favorites .devlop .inner-dev div {
-        background-color: #FFF;
-        height: 300px;
-        width: 300px;
-        margin-left: 0; }
-      .favorites .devlop .inner-dev h3, .favorites .devlop .inner-dev p {
-        font-size: 1.25rem;
-        line-height: 1.4;
-        margin-left: 20px; } }
-/*Categories*/
-.main-cat a {
-  color: #000; }
-  .main-cat a:hover {
-    color: #000;
-    text-decoration: none; }
-  .main-cat a img {
-    margin-bottom: 10px; }
-  .main-cat a p {
-    font-size: .88rem;
-    margin-bottom: 10px; }
+    padding: 0; }
+    .favorites .tittle h2 {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.17;
+      color: #0e1724;
+      width: 100%;
+      margin: 30px 0; }
+    .favorites div .logo {
+      margin-left: 10px;
+      width: 450px; } }
+/*About*/
+.main-about {
+  margin-bottom: 100px; }
+  .main-about .about h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 50px; }
+  .main-about .inner-about {
+    display: flex; }
+    .main-about .inner-about div {
+      width: 400px; }
+    .main-about .inner-about p {
+      font-size: 1.25rem;
+      font-weight: 400; }
 
 @media screen and (max-width: 768px) {
-  .main-cat {
-    background-color: #DDD;
-    margin: 10px;
-    padding: 10px;
-    height: 85px;
-    max-width: 150px; } }
-.api, .main-api {
-  background-color: #EEE;
-  padding: 18px;
-  margin: 0 10px; }
-  .api .enter, .main-api .enter {
-    background-color: #EEE; }
-    .api .enter h6, .main-api .enter h6 {
-      margin-bottom: 20px; }
-    .api .enter label, .main-api .enter label {
-      margin-bottom: 20px; }
-    .api .enter .btn, .main-api .enter .btn {
-      background-color: #007bff;
-      border: #007bff;
-      margin-top: 20px; }
-      .api .enter .btn:hover, .main-api .enter .btn:hover {
-        background-color: #007bff;
-        border: #007bff; }
-  .api .freelancer, .main-api .freelancer {
-    text-align: right; }
-    .api .freelancer h6, .main-api .freelancer h6 {
-      margin-bottom: 20px; }
-    .api .freelancer label, .main-api .freelancer label {
-      margin-bottom: 20px; }
-    .api .freelancer .btn, .main-api .freelancer .btn {
-      background-color: #007bff;
-      border: #007bff;
-      margin-top: 20px; }
-      .api .freelancer .btn:hover, .main-api .freelancer .btn:hover {
-        background-color: #007bff;
-        border: #007bff; }
+  .About {
+    overflow: scroll;
+    display: flex; }
+    .About .inner-about div {
+      width: 170px; } }
+/*Cover*/
+.cover {
+  margin-bottom: 100px; }
+  .cover .main-cover {
+    background-image: url("./assets/cover_letters.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 762px; }
+    .cover .main-cover .test h2 {
+      display: none; }
+    .cover .main-cover .tittle {
+      margin: 150px 0;
+      color: #F7F7F7; }
+      .cover .main-cover .tittle h2 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.17; }
+      .cover .main-cover .tittle h6 {
+        font-size: 41px;
+        font-weight: 1.17;
+        width: 500px; }
+      .cover .main-cover .tittle p {
+        margin: 20px 0;
+        font-size: 24px;
+        font-weight: 400;
+        width: 550px; }
+      .cover .main-cover .tittle a {
+        height: 200px;
+        width: 200px;
+        padding: 10px 20px;
+        border: 1px solid #f7f7f7;
+        color: #FFF;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 20px; }
+        .cover .main-cover .tittle a:hover {
+          text-decoration: none;
+          background-color: rgba(255, 255, 255, 0.233); }
+    .cover .main-cover .inner-cover {
+      background-image: url("./assets/api.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 762px;
+      margin-bottom: 100px;
+      color: #F7F7F7; }
+      .cover .main-cover .inner-cover .tittle {
+        margin: 200px 0; }
+        .cover .main-cover .inner-cover .tittle h2 {
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 1.17; }
+        .cover .main-cover .inner-cover .tittle h6 {
+          font-size: 41px;
+          line-height: 1.17; }
+        .cover .main-cover .inner-cover .tittle p {
+          font-size: 24px;
+          font-weight: 400;
+          margin: 20px 0;
+          width: 550px; }
 
-/*Footer*/
-.footer {
-  background-color: #000;
-  color: #FFF; }
-  .footer .container {
-    margin-bottom: 0; }
-  .footer p i {
-    margin-right: 10px; }
-  .footer h2 {
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .footer h5 {
-    margin-top: 20px;
-    color: #FFF;
+@media screen and (max-width: 768px) {
+  .cover .main-cover .tittle {
     text-align: left;
-    margin-left: 40px; }
-  .footer ul li {
-    color: #EEE; }
-    .footer ul li img {
-      border: 1px solid #FFF;
-      padding: 10px;
-      width: 150px;
-      margin-bottom: 20px; }
-    .footer ul li a {
-      margin-right: 30px;
-      color: #FFF;
-      text-decoration: none; }
-
-@media screen and (max-width: 768px) {
-  .footer {
-    max-width: 100%; } }
+    margin: 50px 0;
+    padding: 0 10px; }
+    .cover .main-cover .tittle h6 {
+      width: 100%; }
+    .cover .main-cover .tittle p {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
