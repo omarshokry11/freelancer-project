@@ -7,6 +7,8 @@ import Work from './components/Work.js';
 import Favorites from './components/Favorites.js';
 import About from './components/About.js';
 import Cover from './components/Cover.js';
+import Skills from './components/Skills.js';
+import Footer from './components/Footer.js';
 
 
 class Portal extends React.Component {
@@ -20,6 +22,8 @@ class Portal extends React.Component {
         <Favorites />
         <About />
         <Cover />
+        <Skills />
+        <Footer />
       </>
     );
   }
