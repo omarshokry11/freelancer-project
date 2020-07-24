@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Image } from 'react-bootstrap';
+import { fetchFavorites } from '../Redux/actions'
 
 const Favorites = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchFavorites());
+    }, [dispatch])
+
+    const data = useSelector(state => state.favorites);
+
     return (
     <div className="favorites">
         <div className="container text-center">
@@ -9,42 +20,22 @@ const Favorites = () => {
                     <h2>Turn your dreams into reality with Freelancer</h2>
                     <p>Here are some of our most popular projects:</p>
                 </div>
-                <div className="col-md-4 col-12">
-                    <div className="logo">
-                        <a href="#"> Post a contest like this </a>
-                    </div>
-                    <p>Website Development</p>
-                </div>
-                <div className="col-md-4 col-12">
-                    <div className="logo">
-                        <a href="#"> Post a contest like this </a>
-                    </div>
-                    <p>Packaging Design</p>
-                </div>
-                <div className="col-md-4 col-12">
-                    <div className="logo">
-                        <a href="#"> Post a contest like this </a>
-                    </div>
-                    <p>Logo Design</p>
-                </div>
-                <div className="col-md-4 col-12">
-                    <div className="logo">
-                        <a> Post a contest like this </a>
-                    </div>
-                    <p>Graphic Design</p>
-                </div>
-                <div className="col-md-4 col-12">
-                    <div className="logo">
-                        <a href="#"> Post a contest like this </a>
-                    </div>
-                    <p>Mobile App</p>
-                </div>
-                <div className="col-md-4 col-12">
-                    <div className="logo">
-                        <a href="#"> Post a contest like this </a>
-                    </div>
-                    <p>Writing</p>
-                </div>
+                    {
+                        data.map(item => {
+                            return (
+                                <div className="inner-favorites col-md-4" key={item.id}>
+                                    <div className="logo">
+                                        <Image src={item.img} />
+                                        <a href=" "> Post a contest like this </a>
+                                    </div>
+                                    <div className="details">
+                                        <h5>{item.title}</h5>
+                                        <p>{item.details}</p>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
             </div>
         </div>
     </div>
